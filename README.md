@@ -2,8 +2,6 @@
 
 A modern music library app built with Next.js.
 
-First, run the development server:
-
 ## Features
 
 - Connect and manage your playlists
@@ -11,6 +9,8 @@ First, run the development server:
 - Clean, responsive UI with Tailwind CSS
 
 ## Getting Started
+
+First, run the development server:
 
 ```bash
 npm run dev
