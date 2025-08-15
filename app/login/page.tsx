@@ -9,18 +9,24 @@ export default function Login() {
   const router = useRouter();
 
   useEffect(() => {
-    if (session) router.push("/"); // after login, redirect somewhere
+    if (session) router.push("/"); // after login, redirect dashboard once designed and implemented
   }, [session, router]);
 
   if (session) return <div>Redirecting…</div>;
 
   return (
+    // Login page with a gradient background and logo
     <div className="h-screen flex items-center justify-center">
       <div className="relative w-120 h-140 rounded-3xl border-2 border-black shadow-lg overflow-hidden">
         {/* Base gradient */}
         <div className="absolute inset-0 bg-gradient-to-tl from-[#9a9a9a] via-[#707070] to-[#454545]"></div>
         {/* Hover gradient */}
-        <div className="absolute inset-0 bg-gradient-to-tl from-[#454545] via-[#707070] to-[#9a9a9a] opacity-0 hover:opacity-80 transition-opacity duration-500"></div>
+        <div
+          className="absolute inset-0 bg-gradient-to-tl from-[#454545] via-[#707070] to-[#9a9a9a] 
+        opacity-0 hover:opacity-80 transition-opacity duration-500"
+        ></div>
+        {/* Logo */}
+        <img src={"/Noctura10.svg"} alt="Logo" className="w-20 h-20" />
       </div>
     </div>
   );
