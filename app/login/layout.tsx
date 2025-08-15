@@ -7,7 +7,7 @@ export default function LoginLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{ backgroundColor: "black" }}>{children}</body>
+      <body style={{ backgroundColor: "#000000" }}>{children}</body>
     </html>
   );
 }
